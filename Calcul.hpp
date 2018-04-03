@@ -3,6 +3,7 @@
 #include "Sommet.hpp"
 #include "Graphe.hpp"
 #include <vector>
+#include <queue>
 
 class Graphe;
 class Calcul
@@ -15,11 +16,9 @@ public:
   des compo connexes. */
   int k_con(Graphe& graphique); // retourne le mini d'arêtes à déco pour casser la connexité
   void evol_n1_gene(int tps, Graphe& graphique); /* exécuté toute les fonctions permettant de trouver un+1 en
-  fonction de un.  tps correspond à la durée sur laquelle on fait la simulation
-
-
-
   fonction de un.  tps correspond à la durée sur laquelle on fait la simulation*/
+  bool compo_con_inv(Graphe& graphique, Sommet& s_deb, Sommet& s_atrouv);
+  void marq_vois(Graphe& graphique, Sommet& s);
 
 };
 
