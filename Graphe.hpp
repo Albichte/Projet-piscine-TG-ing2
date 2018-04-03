@@ -1,5 +1,5 @@
-#ifndef Graphe
-#define Graphe
+#ifndef Graphe_hpp
+#define Graphe_hpp
 #include <vector>
 using namespace std;
 
