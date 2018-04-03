@@ -8,6 +8,7 @@ using namespace std;
 
 class Sommet
 {
+  friend class Graphe;
 private:
   string m_nom_im;
   int m_num_sommet;
