@@ -4,8 +4,10 @@
 #include <vector>
 #include <iostream>
 #include <string>
+#include "Arc.hpp"
 using namespace std;
 
+class Arc;
 class Sommet
 {
   friend class Graphe;
@@ -14,6 +16,7 @@ private:
   int m_num_sommet;
   vector <Sommet *>  m_prede;
   vector <Sommet *> m_succe;
+  vector<Arc *> m_arc_adj;
   int m_deg; // = nb_succe + sb_prede
   bool m_actif;
   bool m_marque;

@@ -25,5 +25,14 @@ void reset_N_histo()
 
 int Sommet:: evol_n1_som()
 {
-  
+  float N_temp_voisins=0.0;
+  float N_temp_rythme=0.0;
+  for(int i=0; i<m_arc_adj.size();i++)
+  {
+    N_temp_voisins+=m_arc_adj[i].m_som_debut.m_N*m_arc_adj[i].m_weight;
+  }
+  N_temp_rythme= m_N + r*m_N*(1-(float)m_N/(float)m_stable);
+  m_N=N_temp_rythme-N_temp_voisins;
+  n_M_histo.push_back(m_N);
+
 }

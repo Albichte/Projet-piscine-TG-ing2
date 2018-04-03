@@ -3,6 +3,7 @@
 #include "Sommet.hpp"
 using namespace std;
 
+class Sommet;
 class Arc
 {
   friend class Graphe;
