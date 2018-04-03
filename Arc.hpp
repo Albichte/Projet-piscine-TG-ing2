@@ -6,7 +6,7 @@ using namespace std;
 class Arc
 {
   friend class Graphe;
-  friend class Sommet
+  friend class Sommet;
 private:
   Sommet* m_som_debut;
   Sommet* m_som_fin;

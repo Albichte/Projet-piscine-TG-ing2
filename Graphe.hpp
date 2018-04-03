@@ -11,6 +11,7 @@ class Arc;
 
 class Graphe
 {
+  friend class Calcul;
 private:
   vector<Sommet> m_sommets;
   vector<Arc> m_arcs;
