@@ -22,9 +22,9 @@ private:
   float m_rythme; // correspond à r
   vector <int> m_N_histo; /* sauvegarde les valeurs de m_N lors d'une simulation */
 public:
-  Sommet();
+  Sommet(string m_nom_im, int m_num_sommet, int deg, int x, int y, int k, int n, int r);
   ~Sommet(); // destruction pointeurs voisins
-  int vol_n1_som(); /* retourne la val de un+1, et stoque dans l'historique
+  int evol_n1_som(); /* retourne la val de un+1, et stoque dans l'historique
   un et un+1 (pas grave si on stoque la même val 2* au même endroit */
   void reset_N_histo(); // on vide l'historique des valeurs de m_N
 

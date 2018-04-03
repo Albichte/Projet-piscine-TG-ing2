@@ -16,7 +16,7 @@ private:
 
 
 public :
-  Arc(Sommet* s1, Sommet* s2, float weight); // constructeur
+  Arc(Sommet& s1, Sommet& s2, float weight, int num_arc); // constructeur
   ~Arc(); // destruction des pointeurs de sommets
 };
 
