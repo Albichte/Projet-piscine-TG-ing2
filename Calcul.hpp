@@ -16,6 +16,7 @@ public:
 
 
 
+  fonction de un.  tps correspond à la durée sur laquelle on fait la simulation*/
 
 };
 
