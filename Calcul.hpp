@@ -9,7 +9,7 @@ class Calcul
 {
   friend class Graphe;
 public:
-  vector<vector<Sommet *>> forte_connex(Graphe graphique);
+  vector<vector<Sommet *>> forte_connex(Graphe& graphique);
   /* marque les sommets pour les compo conn
   retourner un vector<vector<int/Somemts>> pour savoir les sommet qui font partie
   des compo connexes. */
