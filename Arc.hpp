@@ -1,6 +1,6 @@
 #ifndef Arc_hpp
 #define Arc_hpp
-#include "Sommet"
+#include "Sommet.hpp"
 using namespace std;
 
 class Arc
@@ -16,8 +16,8 @@ private:
 
 
 public :
-  Arc(Sommet* s1, Sommet* s2, float weight) // constructeur
-  ~Arc() // destruction des pointeurs de sommets
+  Arc(Sommet* s1, Sommet* s2, float weight); // constructeur
+  ~Arc(); // destruction des pointeurs de sommets
 };
 
 #endif

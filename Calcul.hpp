@@ -1,10 +1,13 @@
 #ifndef Calcul_hpp
 #define Calcul_hpp
 #include "Sommet.hpp"
-#incude <vector>
+#include "Graphe.hpp"
+#include <vector>
 
+class Graphe;
 class Calcul
 {
+  friend class Graphe
 public:
   vector<vector<Sommet *>> forte_connex(Graphe graphique);
   /* marque les sommets pour les compo conn
