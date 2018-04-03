@@ -27,8 +27,6 @@ public:
   void reset_actif_arc(); // fait un reset des valeur de actif de tous les arcs à true
   void sauvegarde();
 
-
-
 };
 
 #endif /* Graphe */

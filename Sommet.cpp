@@ -11,3 +11,4 @@ Sommet(string nom_im, int num_sommet, int deg, int x, int y, int k, int n, int r
   m_N= n;
   m_rythme= r;
 }
+~Sommet(){};
