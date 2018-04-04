@@ -18,7 +18,7 @@ public:
   void evol_n1_gene(int tps, Graphe& graphique); /* exécuté toute les fonctions permettant de trouver un+1 en
   fonction de un.  tps correspond à la durée sur laquelle on fait la simulation*/
   bool compo_con_inv(Graphe& graphique, Sommet& s_deb, Sommet& s_atrouv);
-  void marq_vois(Graphe& graphique, Sommet& s);
+  void marq_vois(Sommet& s);
 
 };
 

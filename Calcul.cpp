@@ -46,11 +46,22 @@ bool compo_con_inv(Graphe& graphique, Sommet& s_deb, Sommet& s_atrouv)
   {
     for(int i=0;i<queue_som.front().m_succe.size();i++)
     {
-      
+      if(queue_som.front().m_succe[i].m_marque==false)
+      {
+        queue_som.front().m_succe[i].m_marque=true;
+        queue_som.push(queue_som.front().m_succe[i]);
+      }
     }
 
   }
-
+  if(queue_som.size()==0)
+  {
+    return false;
+  }
+  else
+  {
+    return true;
+  }
 }
 
 
@@ -60,5 +71,6 @@ bool compo_con_inv(Graphe& graphique, Sommet& s_deb, Sommet& s_atrouv)
 
 vector<vector<Sommet *>> Calcul:: forte_connex(Graphe& graphique)
 {
+
 
 }
