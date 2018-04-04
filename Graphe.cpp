@@ -196,7 +196,11 @@ void Graphe:: supr_som(Sommet& s)
     it_som++;
   }
 
+<<<<<<< HEAD
   //appel surp ar pour les arï¿½tes adjacentes avec un for
+=======
+  //appel surp ar pour les arètes adjacentes avec un for
+>>>>>>> 327114f0d83d20a6b3516e3c6a4b408a1729a9d3
   m_sommets.erase(it_som,it_som);
 }
 
@@ -210,7 +214,13 @@ void Graphe:: ajout_arc(Sommet& s1, Sommet& s2, float weight, int num_arc)
   s1.m_arc_adj.push_back(&m_arcs[m_arcs.size()-1]);
   s2.m_arc_adj.push_back(&m_arcs[m_arcs.size()-1]);
 }
+<<<<<<< HEAD
 /*
+=======
+
+/*
+
+>>>>>>> 327114f0d83d20a6b3516e3c6a4b408a1729a9d3
 void Graphe:: supr_arc(Arc&a)
 {
   a.m_som_debut->m_deg--;
@@ -219,7 +229,11 @@ void Graphe:: supr_arc(Arc&a)
   vector<Sommet*>:: iterator it_som;
 
 
+<<<<<<< HEAD
   // On efface le pointeur dans les diffï¿½rents sommets
+=======
+  // On efface le pointeur dans les différents sommets
+>>>>>>> 327114f0d83d20a6b3516e3c6a4b408a1729a9d3
   *it_som= a.m_som_debut->m_succe[0];
   while(*it_som!=a.m_som_fin and *it_som!=a.m_som_debut->m_succe[a.m_som_debut->m_succe.size()-1])
   {
@@ -234,7 +248,11 @@ void Graphe:: supr_arc(Arc&a)
   }
   a.m_som_fin->m_prede.erase(it_som,it_som);
 
+<<<<<<< HEAD
   //on efface le pointeur dans les vecteurs d'arï¿½tes adjacentes
+=======
+  //on efface le pointeur dans les vecteurs d'arètes adjacentes
+>>>>>>> 327114f0d83d20a6b3516e3c6a4b408a1729a9d3
   //s1
   *it_arc=a.m_som_debut->m_arc_adj[0];
   while (*it_arc!=&a and *it_arc!=a.m_som_debut->m_arc_adj[a.m_som_debut->m_arc_adj.size()-1])
@@ -267,3 +285,7 @@ void Graphe::update()
 {
     m_cadre.update();
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 327114f0d83d20a6b3516e3c6a4b408a1729a9d3
