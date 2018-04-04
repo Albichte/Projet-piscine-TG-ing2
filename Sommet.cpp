@@ -1,4 +1,5 @@
 #include"Sommet.h"
+#include"Arc.h"
 
 Sommet :: Sommet(string nom_im, int num_sommet, int deg, int x, int y, int k, int n, float r)
 {

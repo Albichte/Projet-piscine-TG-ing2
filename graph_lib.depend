@@ -1,0 +1,94 @@
+# depslib dependency file v1.0
+1522862444 source:c:\users\leo gerardin\desktop\graph_lib_exemple_test\grman\coords.cpp
+	"coords.h"
+
+1522862444 c:\users\leo gerardin\desktop\graph_lib_exemple_test\grman\coords.h
+	<cmath>
+
+1522862444 source:c:\users\leo gerardin\desktop\graph_lib_exemple_test\grman\grman.cpp
+	<cmath>
+	<unordered_map>
+	<unordered_set>
+	<utility>
+	<string>
+	<iostream>
+	<regex>
+	"grman.h"
+	<allegro.h>
+	<png.h>
+	<loadpng.h>
+	<jpgalleg.h>
+
+1522862444 c:\users\leo gerardin\desktop\graph_lib_exemple_test\grman\grman.h
+	<allegro.h>
+	<string>
+	"grman_couleurs.h"
+	"coords.h"
+	"widget.h"
+
+1522862444 c:\users\leo gerardin\desktop\graph_lib_exemple_test\grman\grman_couleurs.h
+
+1522862444 c:\users\leo gerardin\desktop\graph_lib_exemple_test\grman\widget.h
+	"grman.h"
+	<iostream>
+	<string>
+	<vector>
+	<algorithm>
+	<allegro.h>
+
+1522862444 source:c:\users\leo gerardin\desktop\graph_lib_exemple_test\grman\widget.cpp
+	"widget.h"
+
+1522876081 source:c:\users\leo gerardin\desktop\graph_lib_exemple_test\main.cpp
+	"grman/grman.h"
+	<iostream>
+	"test.h"
+	<iostream>
+	"Graphe.h"
+	"Calcul.h"
+	"Sommet.h"
+	"Arc.h"
+
+1522864513 c:\users\leo gerardin\desktop\graph_lib_exemple_test\test.h
+	"grman/grman.h"
+	<iostream>
+	<stack>
+
+1522862444 source:c:\users\leo gerardin\desktop\graph_lib_exemple_test\test.cpp
+	"test.h"
+
+1522875534 source:c:\users\leo gerardin\desktop\graph_lib_exemple_test\graphe.cpp
+	"Graphe.h"
+	"Sommet.h"
+	"Arc.h"
+	<iostream>
+	<fstream>
+
+1522875190 source:c:\users\leo gerardin\desktop\graph_lib_exemple_test\arc.cpp
+	"Arc.h"
+	"Sommet.h"
+
+1522875677 c:\users\leo gerardin\desktop\graph_lib_exemple_test\arc.h
+	"Sommet.h"
+
+1522875677 c:\users\leo gerardin\desktop\graph_lib_exemple_test\sommet.h
+	<string>
+	<vector>
+	<iostream>
+
+1522876240 c:\users\leo gerardin\desktop\graph_lib_exemple_test\graphe.h
+	"grman/grman.h"
+	"Sommet.h"
+
+1522875557 source:c:\users\leo gerardin\desktop\graph_lib_exemple_test\sommet.cpp
+	"Sommet.h"
+	"Arc.h"
+
+1522875852 c:\users\leo gerardin\desktop\graph_lib_exemple_test\calcul.h
+	"Sommet.h"
+	<vector>
+	<queue>
+
+1522875809 source:c:\users\leo gerardin\desktop\graph_lib_exemple_test\calcul.cpp
+	"Calcul.h"
+

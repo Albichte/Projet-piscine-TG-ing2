@@ -19,8 +19,8 @@ void Sommet::marq_vois(Sommet& s)
 bool compo_con_inv(Graphe& graphique, Sommet& s_deb, Sommet& s_atrouv)
 {
   // fonction qui permet de savoir si il existe un chemin d'un sommet
-  // Ã  un autre
-  //on garde les anciencs marquages en mÃ©moire
+  // à un autre
+  //on garde les anciencs marquages en mémoire
   vector<vector<int>> histo_marquage;
   for(int i=0; i<graphique.m_sommets.size();i++)
   {
@@ -68,7 +68,7 @@ vector<Sommet*>  Calcul::compo_f_con_som(Graphe& graphique, Sommet& s1)
 {
   //Reset des marquages
   graphique.reset_marquages_som();
-  //on dÃ©clare la file d'attente et le vecteur pour la composante
+  //on déclare la file d'attente et le vecteur pour la composante
   // fortement connexe
   vector<Sommet*> compo_f_con;
   queue<Sommet*> file_attente;

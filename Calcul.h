@@ -1,7 +1,7 @@
 #ifndef CALCUL_H_INCLUDED
 #define CALCUL_H_INCLUDED
 #include "Sommet.h"
-#include "Graphe.h"
+//#include "Graphe.h"
 #include <vector>
 #include <queue>
 /*
@@ -22,5 +22,6 @@ public:
   vector<Sommet*>  compo_f_con_som(Graphe& graphique, Sommet& s1);
 
 };*/
+
 
 #endif // CALCUL_H_INCLUDED

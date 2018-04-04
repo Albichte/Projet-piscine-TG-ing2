@@ -1,4 +1,6 @@
 #include "Graphe.h"
+#include "Sommet.h"
+#include "Arc.h"
 #include <iostream>
 #include <fstream>
 
@@ -18,7 +20,7 @@ Graphe::Graphe(string nom_fich)
 
     //ouverture du fichier en mode lecture
     ifstream fichier (nom_fich,ios::in);
-    //si fichier trouvÃ©
+    //si fichier trouvé
     if(fichier)
     {
         //lecture des informations en tete de fichier
@@ -107,7 +109,7 @@ void Graphe::sauvegarde(string nom_fich)
 {
     //ouverture du fichier en mode ecriture en effacant le contenu
     ofstream fichier("deux.txt",ios::out|ios::trunc);
-    //si fichier trouvÃ©
+    //si fichier trouvé
     if(fichier)
     {
         //ecriture des informations en tete de fichier
@@ -144,3 +146,82 @@ void Graphe::sauvegarde(string nom_fich)
     //fermeture du fichier
     fichier.close();
 }
+
+
+//Fonctions d'ajout et suppression de sommet et arcs
+void Graphe:: ajout_som(string m_nom_im, int m_num_sommet, int x, int y, int k, int n, float r)
+{
+    m_sommets.push_back( *new Sommet(m_nom_im, m_num_sommet,0, x, y, k, n, r));
+    this->m_ordre++;
+}
+
+void Graphe:: supr_som(Sommet& s)
+{
+  m_ordre--;
+  vector<Sommet>::iterator it_som;
+  it_som=m_sommets.begin();
+  while(&(*it_som)!=&s)
+  {
+    it_som++;
+  }
+  //appel surp ar pour les arètes adjacentes avec un for
+  m_sommets.erase(it_som,it_som);
+}
+
+void Graphe:: ajout_arc(Sommet& s1, Sommet& s2, float weight, int num_arc)
+{
+  m_arcs.push_back(*new Arc(s1, s2,  weight, num_arc));
+  s1.m_succe.push_back(&s2);
+  s2.m_prede.push_back(&s1);
+  s1.m_deg++;
+  s2.m_deg++;
+  s1.m_arc_adj.push_back(&m_arcs[m_arcs.size()-1]);
+  s2.m_arc_adj.push_back(&m_arcs[m_arcs.size()-1]);
+}
+/*
+void Graphe:: supr_arc(Arc&a)
+{
+  a.m_som_debut->m_deg--;
+  a.m_som_fin->m_deg--;
+  vector<Arc*>::iterator it_arc;
+  vector<Sommet*>:: iterator it_som;
+
+  // On efface le pointeur dans les différents sommets
+  *it_som= a.m_som_debut->m_succe[0];
+  while(*it_som!=a.m_som_fin and *it_som!=a.m_som_debut->m_succe[a.m_som_debut->m_succe.size()-1])
+  {
+    it_som++;
+  }
+  a.m_som_debut->m_succe.erase(it_som);
+
+  *it_som=a.m_som_fin->m_prede[0];
+  while(*it_som!=a.m_som_debut and *it_som!=a.m_som_fin->m_prede[a.m_som_fin->m_prede.size()-1])
+  {
+    it_som++;
+  }
+  a.m_som_fin->m_prede.erase(it_som,it_som);
+  //on efface le pointeur dans les vecteurs d'arètes adjacentes
+  //s1
+  *it_arc=a.m_som_debut->m_arc_adj[0];
+  while (*it_arc!=&a and *it_arc!=a.m_som_debut->m_arc_adj[a.m_som_debut->m_arc_adj.size()-1])
+  {
+    it_arc++;
+  }
+  a.m_som_debut->m_arc_adj.erase(it_arc,it_arc);
+
+  //s2
+  *it_arc=a.m_som_fin->m_arc_adj[0];
+  while (*it_arc!=&a and *it_arc!=a.m_som_fin->m_arc_adj[a.m_som_fin->m_arc_adj.size()-1])
+  {
+    it_arc++;
+  }
+  a.m_som_fin->m_arc_adj.erase(it_arc,it_arc);
+
+  // on efface ensuite dans le m_arcs du graphe
+  *it_som=a.m_s[0];
+  while(*it_som!=&s)
+  {
+    it_som++;
+  }
+  a.m_sommets.erase(it_som,it_som);
+}*/

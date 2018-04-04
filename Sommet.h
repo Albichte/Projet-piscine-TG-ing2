@@ -3,8 +3,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
-#include <string>
-#include "Arc.h"
+//#include "Arc.h"
 using namespace std;
 
 class Arc;
@@ -34,5 +33,6 @@ public:
 
 
 };
+
 
 #endif // SOMMET_H_INCLUDED
