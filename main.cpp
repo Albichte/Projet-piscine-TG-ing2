@@ -7,6 +7,9 @@ using namespace std;
 
 int main()
 {
+  Sommet a("eloi",0,)
+
+  
   cout<<"Hello world";
   return 0;
 }
