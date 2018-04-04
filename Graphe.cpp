@@ -197,7 +197,7 @@ void Graphe:: supr_som(Sommet& s)
   }
 
 
-  //appel surp ar pour les arètes adjacentes avec un for
+  //appel surp ar pour les arï¿½tes adjacentes avec un for
   m_sommets.erase(it_som,it_som);
 }
 
@@ -220,7 +220,7 @@ void Graphe:: supr_arc(Arc&a)
   vector<Sommet*>:: iterator it_som;
 
 
-  // On efface le pointeur dans les différents sommets
+  // On efface le pointeur dans les diffï¿½rents sommets
   *it_som= a.m_som_debut->m_succe[0];
   while(*it_som!=a.m_som_fin and *it_som!=a.m_som_debut->m_succe[a.m_som_debut->m_succe.size()-1])
   {
@@ -236,7 +236,7 @@ void Graphe:: supr_arc(Arc&a)
   a.m_som_fin->m_prede.erase(it_som,it_som);
 
 
-  //on efface le pointeur dans les vecteurs d'arètes adjacentes
+  //on efface le pointeur dans les vecteurs d'arï¿½tes adjacentes
   //s1
   *it_arc=a.m_som_debut->m_arc_adj[0];
   while (*it_arc!=&a and *it_arc!=a.m_som_debut->m_arc_adj[a.m_som_debut->m_arc_adj.size()-1])
@@ -269,4 +269,3 @@ void Graphe::update()
 {
     m_cadre.update();
 }
-
