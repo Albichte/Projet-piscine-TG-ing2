@@ -95,8 +95,6 @@ vector<Sommet*>  Calcul::compo_f_con_som(Graphe& graphique, Sommet& s1)
 return compo_f_con;
 }
 
-
-
 //fonction retournant toutes les composantes connexes
 vector<vector<Sommet *>> Calcul:: forte_connex(Graphe& graphique)
 {
