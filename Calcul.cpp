@@ -1,5 +1,5 @@
-#include "Calcul.hpp"
-
+#include "Calcul.h"
+/*
 void Calcul:: evol_n1_gene(int tps, Graphe& graphique)
 {
   for(int i=0;i<graphique.m_sommets.size();i++)
@@ -111,3 +111,4 @@ vector<vector<Sommet *>> Calcul:: forte_connex(Graphe& graphique)
   return tt_compo_con;
 
 }
+*/

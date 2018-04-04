@@ -1,8 +1,8 @@
 #include <iostream>
-#include "Graphe.hpp"
-#include "Calcul.hpp"
-#include "Sommet.hpp"
-#include "Arc.hpp"
+#include "Graphe.h"
+#include "Calcul.h"
+#include "Sommet.h"
+#include "Arc.h"
 using namespace std;
 
 int main()

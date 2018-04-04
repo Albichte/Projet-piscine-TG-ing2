@@ -1,5 +1,5 @@
-#include "Arc.hpp"
-#include "Sommet.hpp"
+#include "Arc.h"
+#include "Sommet.h"
 
 Arc::Arc(Sommet& s1, Sommet& s2, float weight, int num_arc)
 {

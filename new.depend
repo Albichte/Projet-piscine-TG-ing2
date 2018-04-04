@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1522853562 source:c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\arc.cpp
+	"Arc.h"
+	"Sommet.h"
+
+1522849342 c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\arc.h
+	"Sommet.h"
+
+1522849862 c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\sommet.h
+	<string>
+	<vector>
+	<iostream>
+	<string>
+	"Arc.h"
+
+1522853577 source:c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\calcul.cpp
+	"Calcul.h"
+
+1522849412 c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\calcul.h
+	"Sommet.h"
+	"Graphe.h"
+	<vector>
+	<queue>
+
+1522849341 c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\graphe.h
+	"Sommet.h"
+	"Arc.h"
+	"Calcul.h"
+	<vector>
+
+1522853596 source:c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\graphe.cpp
+	"Graphe.h"
+	<iostream>
+	<fstream>
+
+1522853563 source:c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\main.cpp
+	<iostream>
+	"Graphe.h"
+	"Calcul.h"
+	"Sommet.h"
+	"Arc.h"
+
+1522853695 source:c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\sommet.cpp
+	"Sommet.h"
+

@@ -1,9 +1,10 @@
-#include "Graphe.hpp"
+#include "Graphe.h"
 #include <iostream>
+#include <fstream>
 
 Graphe::Graphe()
 {
-  m_odre=0;
+  m_ordre=0;
   m_nom="";
 }
 
