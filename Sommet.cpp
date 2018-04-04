@@ -1,6 +1,6 @@
 #include<Sommet.hpp>
 
-Sommet :: Sommet(string nom_im, int num_sommet, int deg, int x, int y, int k, int n, int r)
+Sommet :: Sommet(string nom_im, int num_sommet, int deg, int x, int y, int k, int n, float r)
 {
   m_nom_im=nom_im;
   m_num_sommet= num_sommet;
