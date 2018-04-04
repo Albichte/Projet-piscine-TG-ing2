@@ -1,10 +1,10 @@
-#ifndef Sommet_hpp
-#define Sommet_hpp
+#ifndef SOMMET_H_INCLUDED
+#define SOMMET_H_INCLUDED
 #include <string>
 #include <vector>
 #include <iostream>
 #include <string>
-#include "Arc.hpp"
+#include "Arc.h"
 using namespace std;
 
 class Arc;
@@ -21,18 +21,18 @@ private:
   bool m_actif;
   bool m_marque;
   int m_x , m_y; // coord allegro
-  int m_stable; // stabilitÃ© de la population ou K
+  int m_stable; // stabilité de la population ou K
   float m_N; // population ou biomasse
-  float m_rythme; // correspond Ã  r
+  float m_rythme; // correspond à r
   vector <int> m_N_histo; /* sauvegarde les valeurs de m_N lors d'une simulation */
 public:
   Sommet(string m_nom_im, int m_num_sommet, int deg, int x, int y, int k, int n, float r);
   ~Sommet(); // destruction pointeurs voisins
-  int evol_n1_som(); /* retourne la val de un+1, et stoque dans l'historique
-  un et un+1 (pas grave si on stoque la mÃªme val 2* au mÃªme endroit */
+  void evol_n1_som(); /* retourne la val de un+1, et stoque dans l'historique
+  un et un+1 (pas grave si on stoque la même val 2* au même endroit */
   void reset_N_histo(); // on vide l'historique des valeurs de m_N
 
 
 };
 
-#endif
+#endif // SOMMET_H_INCLUDED

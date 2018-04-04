@@ -1,6 +1,6 @@
-#ifndef Arc_hpp
-#define Arc_hpp
-#include "Sommet.hpp"
+#ifndef ARC_H_INCLUDED
+#define ARC_H_INCLUDED
+#include "Sommet.h"
 using namespace std;
 
 class Sommet;
@@ -23,4 +23,4 @@ public :
   ~Arc(); // destruction des pointeurs de sommets
 };
 
-#endif
+#endif // ARC_H_INCLUDED
