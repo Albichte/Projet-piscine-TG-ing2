@@ -19,6 +19,7 @@ public:
   fonction de un.  tps correspond à la durée sur laquelle on fait la simulation*/
   bool compo_con_inv(Graphe& graphique, Sommet& s_deb, Sommet& s_atrouv);
   void marq_vois(Sommet& s);
+  vector<Sommet*>  compo_f_con_som(Graphe& graphique, Sommet& s1);
 
 };
 

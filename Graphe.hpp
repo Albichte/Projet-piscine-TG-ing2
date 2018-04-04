@@ -19,13 +19,13 @@ private:
   string m_nom;
 public:
   Graphe(); /* par défaut lors de l'implémentation d'un nouveau graphe par un utilisateur */
-  Graphe(string no_fich); // ouverture graphe
+  Graphe(string nom_fich); // ouverture graphe
   ~Graphe(); // destruteur des vecteurs d'arcs et de sommets. Penser à appeler la sauvegarde.
   void reset_marquages_som();// fait un reset de marquages des sommets à false
   void reset_actif_som(); // fait un reset des valeur de actif de tous les sommets à true
   void reset_marquages_arc();// fait un reset de marquages des arcs à false
   void reset_actif_arc(); // fait un reset des valeur de actif de tous les arcs à true
-  void sauvegarde();
+  void sauvegarde(string nom_fich);
 
 };
 

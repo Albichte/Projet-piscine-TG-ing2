@@ -64,6 +64,21 @@ bool compo_con_inv(Graphe& graphique, Sommet& s_deb, Sommet& s_atrouv)
   }
 }
 
+vector<Sommet*>  Calcul::compo_f_con_som(Graphe& graphique, Sommet& s1)
+{
+  //Reset des marquages
+  graphique.reset_marquages_som();
+  //on déclare la file d'attente et le vecteur pour la composante
+  // fortement connexe
+  vector<Sommet*> compo_f_con;
+  queue<Sommet*> file_attente;
+  file_attente.push(&s1);
+  
+
+}
+
+
+
 //fonction retournant toutes les composantes connexes
 vector<vector<Sommet *>> Calcul:: forte_connex(Graphe& graphique)
 {
