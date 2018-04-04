@@ -64,11 +64,7 @@ bool compo_con_inv(Graphe& graphique, Sommet& s_deb, Sommet& s_atrouv)
   }
 }
 
-
-
-
-
-
+//fonction retournant toutes les composantes connexes
 vector<vector<Sommet *>> Calcul:: forte_connex(Graphe& graphique)
 {
 
