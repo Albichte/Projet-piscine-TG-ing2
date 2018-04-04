@@ -1,5 +1,6 @@
 #ifndef ARC_H_INCLUDED
 #define ARC_H_INCLUDED
+#include "grman/grman.h"
 #include "Sommet.h"
 using namespace std;
 
@@ -15,7 +16,8 @@ private:
   int m_num_arc;
   bool m_actif;
   bool m_marque;
-
+  //widgets pour allegro
+  //grman::Widget
 
 
 public :

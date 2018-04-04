@@ -1,5 +1,6 @@
 #ifndef SOMMET_H_INCLUDED
 #define SOMMET_H_INCLUDED
+#include "grman/grman.h"
 #include <string>
 #include <vector>
 #include <iostream>
@@ -24,6 +25,11 @@ private:
   float m_N; // population ou biomasse
   float m_rythme; // correspond à r
   vector <int> m_N_histo; /* sauvegarde les valeurs de m_N lors d'une simulation */
+  //widgets pour allegro
+  //grman::WidgetButton m_sommet;//retour au menu
+  //grman::WidgetImage m_sommet_im;//image correspondante
+  //grman::WidgetVSlider m_slider;//slider associé*/
+
 public:
   Sommet(string m_nom_im, int m_num_sommet, int deg, int x, int y, int k, int n, float r);
   ~Sommet(); // destruction pointeurs voisins
