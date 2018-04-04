@@ -7,6 +7,8 @@ using namespace std;
 
 int main()
 {
-  cout<<"Hello world";
-  return 0;
+  Graphe* a;
+    a=new Graphe ("prem.txt");
+    a->sauvegarde("deux.txt");
+    return 1;
 }
