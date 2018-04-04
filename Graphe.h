@@ -16,38 +16,35 @@ private:
   int m_ordre;
   string m_nom;
   //widgets pour allegro
-  grman::WidgetBox cadre;//element contenant tous les autres
-  grman::WidgetBox barreoutil;//barre d'outils
+  grman::WidgetBox m_cadre;//element contenant tous les autres
+  grman::WidgetBox m_barreoutil;//barre d'outils
 
-  grman::WidgetButton chargerg;//charger un graphe
-  grman::WidgetImage chargerg_im;//image correspondante
+  grman::WidgetButton m_menu;//retour au menu
+  grman::WidgetImage m_menu_im;//image correspondante
 
-  grman::WidgetButton nouveaug;//nouveau graphe
-  grman::WidgetImage nouveaug_im;//image correspondante
+  grman::WidgetButton m_sauvegarder;//sauvegarder le graphe
+  grman::WidgetImage m_sauvegarder_im;//image correspondante
 
-  grman::WidgetButton sauvegarder;//sauvegarder le graphe
-  grman::WidgetImage sauvegarder_im;//image correspondante
+  grman::WidgetButton m_connexite;//etudier la forte connexite
+  grman::WidgetImage m_connexite_im;//image correspondante
 
-  grman::WidgetButton connexite;//etudier la forte connexite
-  grman::WidgetImage connexite_im;//image correspondante
+  grman::WidgetButton m_kconnexite;//etudier la k connexite
+  grman::WidgetImage m_kconnexite_im;//image correspondante
 
-  grman::WidgetButton kconnexite;//etudier la k connexite
-  grman::WidgetImage kconnexite_im;//image correspondante
+  grman::WidgetButton m_simulation;//lancer la simulation de l'evolution
+  grman::WidgetImage m_simulation_im;//image correspondante
 
-  grman::WidgetButton simulation;//lancer la simulation de l'evolution
-  grman::WidgetImage simulation_im;//image correspondante
+  grman::WidgetButton m_nouveaus;//nouveau sommet
+  grman::WidgetImage m_nouveaus_im;//image correspondante
 
-  grman::WidgetButton nouveaus;//nouveau sommet
-  grman::WidgetImage nouveaus_im;//image correspondante
+  grman::WidgetButton m_supprimers;//supprimer sommet
+  grman::WidgetImage m_supprimers_im;//image correspondante
 
-  grman::WidgetButton supprimers;//supprimer sommet
-  grman::WidgetImage supprimers_im;//image correspondante
+  grman::WidgetButton m_nouveaua;//nouvel arc
+  grman::WidgetImage m_nouveaua_im;//image correspondante
 
-  grman::WidgetButton nouveaua;//nouvel arc
-  grman::WidgetImage nouveaua_im;//image correspondante
-
-  grman::WidgetButton supprimera;//supprimer arc
-  grman::WidgetImage supprimera_im;//image correspondante
+  grman::WidgetButton m_supprimera;//supprimer arc
+  grman::WidgetImage m_supprimera_im;//image correspondante
 
 public:
   Graphe(); /* par d�faut lors de l'impl�mentation d'un nouveau graphe par un utilisateur */
@@ -63,6 +60,8 @@ public:
   void supr_som(Sommet& s);
   void ajout_arc(Sommet& s1, Sommet& s2, float weight, int num_arc);
   void supr_arc(Arc& a);
+  //actualiser les widgets
+  void update();
 
 };
 

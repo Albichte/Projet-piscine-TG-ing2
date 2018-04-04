@@ -20,7 +20,7 @@ Graphe::Graphe(string nom_fich)
 
     //ouverture du fichier en mode lecture
     ifstream fichier (nom_fich,ios::in);
-    //si fichier trouvé
+    //si fichier trouvï¿½
     if(fichier)
     {
         //lecture des informations en tete de fichier
@@ -71,6 +71,37 @@ Graphe::Graphe(string nom_fich)
     }
     else cerr<<"Probleme de fichier"<<endl;
     fichier.close();
+
+    //widgets pour allegro
+    m_cadre.set_frame(0, 0, 1024, 800);//dimensions du cadre
+    m_cadre.set_bg_color(VERT);//couleur du cadre
+
+    m_cadre.add_child( m_barreoutil );//bloc barre outils
+    m_barreoutil.set_frame(10, 10, 1004, 50);//dimensions barre outil
+    m_barreoutil.set_bg_color(ROUGE);//couleur barre outil
+
+    m_barreoutil.add_child( m_menu );//case menu
+    m_menu.set_bg_color(BLEU);//couleur menum_menu.set_frame(15, 15, 85, 45);//dimensions
+    m_menu.set_frame(15, 5, 180, 40);//dimensions
+    //m_img.set_pic_name("tree0.bmp"); pour chaque image
+
+    m_barreoutil.add_child( m_sauvegarder );//case sauvegarder
+    m_sauvegarder.set_bg_color(CYAN);//couleur sauvegarder
+    m_sauvegarder.set_frame(210, 5, 180, 40);//dimensions
+
+    m_barreoutil.add_child( m_connexite );//case connexite
+    m_connexite.set_bg_color(ORANGE);//couleur connexite
+    m_connexite.set_frame(405, 5, 180, 40);//dimensions
+
+    m_barreoutil.add_child( m_kconnexite );//case kconnexite
+    m_kconnexite.set_bg_color(JAUNE);//couleur kconnexite
+    m_kconnexite.set_frame(600, 5, 180, 40);//dimensions
+
+    m_barreoutil.add_child( m_simulation );//case simulation
+    m_simulation.set_bg_color(VIOLET);//couleur simulation
+    m_simulation.set_frame(795, 5, 180, 40);//dimensions
+
+    //if ( m_bouton1.clicked() )//pour l'activation des boutons
 }
 
 void Graphe:: reset_marquages_som()
@@ -109,7 +140,7 @@ void Graphe::sauvegarde(string nom_fich)
 {
     //ouverture du fichier en mode ecriture en effacant le contenu
     ofstream fichier("deux.txt",ios::out|ios::trunc);
-    //si fichier trouvé
+    //si fichier trouvï¿½
     if(fichier)
     {
         //ecriture des informations en tete de fichier
@@ -164,7 +195,8 @@ void Graphe:: supr_som(Sommet& s)
   {
     it_som++;
   }
-  //appel surp ar pour les arètes adjacentes avec un for
+
+  //appel surp ar pour les arï¿½tes adjacentes avec un for
   m_sommets.erase(it_som,it_som);
 }
 
@@ -186,7 +218,8 @@ void Graphe:: supr_arc(Arc&a)
   vector<Arc*>::iterator it_arc;
   vector<Sommet*>:: iterator it_som;
 
-  // On efface le pointeur dans les différents sommets
+
+  // On efface le pointeur dans les diffï¿½rents sommets
   *it_som= a.m_som_debut->m_succe[0];
   while(*it_som!=a.m_som_fin and *it_som!=a.m_som_debut->m_succe[a.m_som_debut->m_succe.size()-1])
   {
@@ -200,7 +233,8 @@ void Graphe:: supr_arc(Arc&a)
     it_som++;
   }
   a.m_som_fin->m_prede.erase(it_som,it_som);
-  //on efface le pointeur dans les vecteurs d'arètes adjacentes
+
+  //on efface le pointeur dans les vecteurs d'arï¿½tes adjacentes
   //s1
   *it_arc=a.m_som_debut->m_arc_adj[0];
   while (*it_arc!=&a and *it_arc!=a.m_som_debut->m_arc_adj[a.m_som_debut->m_arc_adj.size()-1])
@@ -224,4 +258,12 @@ void Graphe:: supr_arc(Arc&a)
     it_som++;
   }
   a.m_sommets.erase(it_som,it_som);
+
+
 }*/
+
+//actualiser tous les widgets
+void Graphe::update()
+{
+    m_cadre.update();
+}
