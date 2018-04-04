@@ -71,6 +71,37 @@ Graphe::Graphe(string nom_fich)
     }
     else cerr<<"Probleme de fichier"<<endl;
     fichier.close();
+
+    //widgets pour allegro
+    m_cadre.set_frame(0, 0, 1024, 800);//dimensions du cadre
+    m_cadre.set_bg_color(VERT);//couleur du cadre
+
+    m_cadre.add_child( m_barreoutil );//bloc barre outils
+    m_barreoutil.set_frame(10, 10, 1004, 50);//dimensions barre outil
+    m_barreoutil.set_bg_color(ROUGE);//couleur barre outil
+
+    m_barreoutil.add_child( m_menu );//case menu
+    m_menu.set_bg_color(BLEU);//couleur menum_menu.set_frame(15, 15, 85, 45);//dimensions
+    m_menu.set_frame(15, 5, 180, 40);//dimensions
+    //m_img.set_pic_name("tree0.bmp"); pour chaque image
+
+    m_barreoutil.add_child( m_sauvegarder );//case sauvegarder
+    m_sauvegarder.set_bg_color(CYAN);//couleur sauvegarder
+    m_sauvegarder.set_frame(210, 5, 180, 40);//dimensions
+
+    m_barreoutil.add_child( m_connexite );//case connexite
+    m_connexite.set_bg_color(ORANGE);//couleur connexite
+    m_connexite.set_frame(405, 5, 180, 40);//dimensions
+
+    m_barreoutil.add_child( m_kconnexite );//case kconnexite
+    m_kconnexite.set_bg_color(JAUNE);//couleur kconnexite
+    m_kconnexite.set_frame(600, 5, 180, 40);//dimensions
+
+    m_barreoutil.add_child( m_simulation );//case simulation
+    m_simulation.set_bg_color(VIOLET);//couleur simulation
+    m_simulation.set_frame(795, 5, 180, 40);//dimensions
+
+    //if ( m_bouton1.clicked() )//pour l'activation des boutons
 }
 
 void Graphe:: reset_marquages_som()
@@ -164,6 +195,7 @@ void Graphe:: supr_som(Sommet& s)
   {
     it_som++;
   }
+
   //appel surp ar pour les arètes adjacentes avec un for
   m_sommets.erase(it_som,it_som);
 }
@@ -178,13 +210,16 @@ void Graphe:: ajout_arc(Sommet& s1, Sommet& s2, float weight, int num_arc)
   s1.m_arc_adj.push_back(&m_arcs[m_arcs.size()-1]);
   s2.m_arc_adj.push_back(&m_arcs[m_arcs.size()-1]);
 }
+
 /*
+
 void Graphe:: supr_arc(Arc&a)
 {
   a.m_som_debut->m_deg--;
   a.m_som_fin->m_deg--;
   vector<Arc*>::iterator it_arc;
   vector<Sommet*>:: iterator it_som;
+
 
   // On efface le pointeur dans les différents sommets
   *it_som= a.m_som_debut->m_succe[0];
@@ -200,6 +235,7 @@ void Graphe:: supr_arc(Arc&a)
     it_som++;
   }
   a.m_som_fin->m_prede.erase(it_som,it_som);
+
   //on efface le pointeur dans les vecteurs d'arètes adjacentes
   //s1
   *it_arc=a.m_som_debut->m_arc_adj[0];
@@ -224,4 +260,13 @@ void Graphe:: supr_arc(Arc&a)
     it_som++;
   }
   a.m_sommets.erase(it_som,it_som);
+
+
 }*/
+
+//actualiser tous les widgets
+void Graphe::update()
+{
+    m_cadre.update();
+}
+
