@@ -18,14 +18,19 @@ private:
   int m_ordre;
   string m_nom;
 public:
-  Graphe(); /* par défaut lors de l'implémentation d'un nouveau graphe par un utilisateur */
+  Graphe(); /* par dï¿½faut lors de l'implï¿½mentation d'un nouveau graphe par un utilisateur */
   Graphe(string nom_fich); // ouverture graphe
-  ~Graphe(); // destruteur des vecteurs d'arcs et de sommets. Penser à appeler la sauvegarde.
-  void reset_marquages_som();// fait un reset de marquages des sommets à false
-  void reset_actif_som(); // fait un reset des valeur de actif de tous les sommets à true
-  void reset_marquages_arc();// fait un reset de marquages des arcs à false
-  void reset_actif_arc(); // fait un reset des valeur de actif de tous les arcs à true
+  ~Graphe(); // destruteur des vecteurs d'arcs et de sommets. Penser ï¿½ appeler la sauvegarde.
+  void reset_marquages_som();// fait un reset de marquages des sommets ï¿½ false
+  void reset_actif_som(); // fait un reset des valeur de actif de tous les sommets ï¿½ true
+  void reset_marquages_arc();// fait un reset de marquages des arcs ï¿½ false
+  void reset_actif_arc(); // fait un reset des valeur de actif de tous les arcs ï¿½ true
   void sauvegarde(string nom_fich);
+  // ces 4 fonctions ajoutent et suppriment des arcs et des sommets
+  void ajout_som(string m_nom_im, int m_num_sommet, int x, int y, int k, int n, float r);
+  void supr_som(Sommet& s);
+  void ajout_arc(Sommet& s1, Sommet& s2, float weight, int num_arc);
+  void supr_arc(Arc& a);
 
 };
 

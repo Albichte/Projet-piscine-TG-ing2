@@ -144,3 +144,84 @@ void Graphe::sauvegarde(string nom_fich)
     //fermeture du fichier
     fichier.close();
 }
+
+
+//Fonctions d'ajout et suppression de sommet et arcs
+void Graphe:: ajout_som(string m_nom_im, int m_num_sommet, int x, int y, int k, int n, float r)
+{
+  m_sommets.push_back(new Sommet(m_nom_im, m_num_sommet,0, x, y, k, n, r));
+  m_odre++;
+}
+
+void Graphe:: supr_som(Sommet& s)
+{
+  m_odre--;
+  vector<Sommet>::iterator it_som;
+  it_som=m_sommets.begin();
+  while(it_som!=&s)
+  {
+    it_som++;
+  }
+  //appel surp ar pour les arètes adjacentes avec un for
+  m_sommets.erase(it_som,it_som);
+  delete s;
+}
+
+void Graphe:: ajout_arc(Sommet& s1, Sommet& s2, float weight, int num_arc)
+{
+  m_arcs.push_back(new Arc(s1, s2,  weight, num_arc));
+  s1.m_succe.push_back(&s2);
+  s2.m_prede.push_back(&s1);
+  s1.m_deg++;
+  s2.m_deg++;
+  s1.m_arc_adj.push_back(m_arcs.end());
+  s2.m_arc_adj.push_back(m_arcs.end());
+}
+
+void Graphe:: supr_arc(Arc&a)
+{
+  a.s1.m_ordre--;
+  a.s2.m_ordre--;
+  vector<Arc>::iterator it_arc;
+  vector<Sommet>:: iterator it_som;
+
+  // On efface le pointeur dans les différents sommets
+  it_som=a.s1.m_succe.begin();
+  while(it_som!=&sor a.s1.m_succe.end())
+  {
+    it_som++;
+  }
+  a.s1.m_succe.erase(it_som,it_som);
+
+  it_som=a.s2.m_prede.begin();
+  while(it_som!=&s or it_som==a.s2.m_prede..end())
+  {
+    it_som++;
+  }
+  a.s2.m_prede.erase(it_som,it_som);
+  //on efface le pointeur dans les vecteurs d'arètes adjacentes
+  //s1
+  it_arc=a.s1.m_arc_adj.begin();
+  while (it_arc!=&a or it_arc==a.s1.m_arc_adj.end())
+  {
+    it_arc++;
+  }
+  a.s1.m_arc_adj.erase(it_arc;it_arc);
+
+  //s2
+  it_arc=a.s2.m_arc_adj.begin();
+  while (it_arc!=&a or it_arc==a.s2.m_arc_adj.end())
+  {
+    it_arc++;
+  }
+  a.s2.m_arc_adj.erase(it_arc;it_arc);
+
+  // on efface ensuite dans le m_sommets du Graphe
+  it_som=a.m_sommets.begin();
+  while(it_som!=&s)
+  {
+    it_som++;
+  }
+  a.m_sommets.erase(it_som,it_som);
+  delete s;
+}
