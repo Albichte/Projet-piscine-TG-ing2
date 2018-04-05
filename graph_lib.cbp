@@ -41,9 +41,12 @@
 		<Unit filename="Arc.cpp" />
 		<Unit filename="Arc.h" />
 		<Unit filename="Calcul.cpp" />
-		<Unit filename="Calcul.h" />
 		<Unit filename="Graphe.cpp" />
 		<Unit filename="Graphe.h" />
+		<Unit filename="Menu.cpp" />
+		<Unit filename="Menu.h" />
+		<Unit filename="Simulateur.cpp" />
+		<Unit filename="Simulateur.h" />
 		<Unit filename="Sommet.cpp" />
 		<Unit filename="Sommet.h" />
 		<Unit filename="grman/coords.cpp" />

@@ -47,7 +47,7 @@ class Widget
         /// Naked pointers : Dangerous...
         std::vector<Widget *> m_children; // weak_ptr ?
 
-        Frame m_frame;
+
         Frame m_abs_frame;
 
         // Viewport du contenu (intérieur Padding)
@@ -72,6 +72,9 @@ class Widget
     /// Méthodes utilisables dans les classes dérivées
     /// et les classes qui ont un Widget ou dérivé en attribut
     public :
+
+        ///passe en public pour garder la valeur apres deplacemeznt
+        Frame m_frame;
 
         /// Construction/Destruction
         Widget(double x, double y, double w, double h) :
@@ -348,6 +351,7 @@ class WidgetImage : public Widget
 
 class WidgetBox : public Widget
 {
+
     protected :
         // La WidgetBox a une position modifiable par drag & drop
         bool m_moveable = false;
@@ -357,7 +361,6 @@ class WidgetBox : public Widget
 
         // Position au moment du click quand on commence à bouger la WidgetBox
         Coords m_pos_start_move;
-
 
     public :
 

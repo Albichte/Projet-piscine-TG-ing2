@@ -92,14 +92,17 @@
 1522875809 source:c:\users\leo gerardin\desktop\graph_lib_exemple_test\calcul.cpp
 	"Calcul.h"
 
-1522875190 source:c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\arc.cpp
+1522921591 source:c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\arc.cpp
 	"Arc.h"
 	"Sommet.h"
 
-1522875677 c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\arc.h
+1522921651 c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\arc.h
+	"grman/grman.h"
 	"Sommet.h"
+	<iostream>
 
-1522875677 c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\sommet.h
+1522921451 c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\sommet.h
+	"grman/grman.h"
 	<string>
 	<vector>
 	<iostream>
@@ -152,7 +155,7 @@
 1522862444 source:c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\grman\widget.cpp
 	"widget.h"
 
-1522878424 source:c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\main.cpp
+1522920158 source:c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\main.cpp
 	"grman/grman.h"
 	<iostream>
 	"test.h"
@@ -171,17 +174,380 @@
 	"grman/grman.h"
 	"Sommet.h"
 
-1522875557 source:c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\sommet.cpp
+1522921591 source:c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\sommet.cpp
 	"Sommet.h"
 	"Arc.h"
 
 1522862444 source:c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\test.cpp
 	"test.h"
 
-1522879987 source:c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\graphe.cpp
+1522919503 source:c:\users\leo gerardin\documents\github\projet-piscine-tg-ing2\graphe.cpp
 	"Graphe.h"
 	"Sommet.h"
 	"Arc.h"
 	<iostream>
 	<fstream>
+
+1523148483 source:c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\arc.cpp
+	"Arc.h"
+	"Sommet.h"
+	"Graphe.h"
+
+1523045095 c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\arc.h
+	"grman/grman.h"
+	"Sommet.h"
+	<iostream>
+
+1522862444 c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\grman\grman.h
+	<allegro.h>
+	<string>
+	"grman_couleurs.h"
+	"coords.h"
+	"widget.h"
+
+1522862444 c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\grman\grman_couleurs.h
+
+1522862444 c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\grman\coords.h
+	<cmath>
+
+1522936534 c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\grman\widget.h
+	"grman.h"
+	<iostream>
+	<string>
+	<vector>
+	<algorithm>
+	<allegro.h>
+
+1523197489 c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\sommet.h
+	"grman/grman.h"
+	<string>
+	<vector>
+	<iostream>
+
+1523217152 source:c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\calcul.cpp
+	"Graphe.h"
+	<queue>
+
+1523030605 c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\calcul.h
+	"Sommet.h"
+	<vector>
+	<queue>
+	"Graphe.h"
+
+1522862444 source:c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\grman\coords.cpp
+	"coords.h"
+
+1523015164 source:c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\grman\grman.cpp
+	<cmath>
+	<unordered_map>
+	<unordered_set>
+	<utility>
+	<string>
+	<iostream>
+	<regex>
+	"grman.h"
+	<allegro.h>
+	<png.h>
+	<loadpng.h>
+	<jpgalleg.h>
+
+1522934778 source:c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\grman\widget.cpp
+	"widget.h"
+
+1523033319 source:c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\main.cpp
+	"grman/grman.h"
+	<iostream>
+	"test.h"
+	<iostream>
+	"Graphe.h"
+	"Calcul.h"
+	"Sommet.h"
+	"Arc.h"
+	"Menu.h"
+
+1522864513 c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\test.h
+	"grman/grman.h"
+	<iostream>
+	<stack>
+
+1523115021 c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\graphe.h
+	"grman/grman.h"
+	"Sommet.h"
+
+1523222734 source:c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\sommet.cpp
+	"Sommet.h"
+	"Arc.h"
+	"Graphe.h"
+
+1522862444 source:c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\test.cpp
+	"test.h"
+
+1523206044 source:c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\graphe.cpp
+	"Graphe.h"
+	"Sommet.h"
+	"Simulateur.h"
+	"Arc.h"
+	<iostream>
+	<fstream>
+	<vector>
+
+1523032561 c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\menu.h
+	"grman/grman.h"
+	<iostream>
+	<string>
+
+1523133705 source:c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\menu.cpp
+	"Menu.h"
+	<iostream>
+	"Graphe.h"
+
+1523205294 c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\simulateur.h
+	"grman/grman.h"
+	<vector>
+
+1523205453 source:c:\users\leo gerardin\desktop\projet-piscine-tg-ing2\simulateur.cpp
+	"Simulateur.h"
+	"Sommet.h"
+
+1523148483 source:c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\arc.cpp
+	"Arc.h"
+	"Sommet.h"
+	"Graphe.h"
+
+1523045095 c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\arc.h
+	"grman/grman.h"
+	"Sommet.h"
+	<iostream>
+
+1522862444 c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\grman\grman.h
+	<allegro.h>
+	<string>
+	"grman_couleurs.h"
+	"coords.h"
+	"widget.h"
+
+1522862444 c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\grman\grman_couleurs.h
+
+1522862444 c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\grman\coords.h
+	<cmath>
+
+1522936534 c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\grman\widget.h
+	"grman.h"
+	<iostream>
+	<string>
+	<vector>
+	<algorithm>
+	<allegro.h>
+
+1523197489 c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\sommet.h
+	"grman/grman.h"
+	<string>
+	<vector>
+	<iostream>
+
+1523115021 c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\graphe.h
+	"grman/grman.h"
+	"Sommet.h"
+
+1523217152 source:c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\calcul.cpp
+	"Graphe.h"
+	<queue>
+
+1523206044 source:c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\graphe.cpp
+	"Graphe.h"
+	"Sommet.h"
+	"Simulateur.h"
+	"Arc.h"
+	<iostream>
+	<fstream>
+	<vector>
+
+1523205294 c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\simulateur.h
+	"grman/grman.h"
+	<vector>
+
+1522862444 source:c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\grman\coords.cpp
+	"coords.h"
+
+1523015164 source:c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\grman\grman.cpp
+	<cmath>
+	<unordered_map>
+	<unordered_set>
+	<utility>
+	<string>
+	<iostream>
+	<regex>
+	"grman.h"
+	<allegro.h>
+	<png.h>
+	<loadpng.h>
+	<jpgalleg.h>
+
+1522934778 source:c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\grman\widget.cpp
+	"widget.h"
+
+1523033319 source:c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\main.cpp
+	"grman/grman.h"
+	<iostream>
+	"test.h"
+	<iostream>
+	"Graphe.h"
+	"Calcul.h"
+	"Sommet.h"
+	"Arc.h"
+	"Menu.h"
+
+1522864513 c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\test.h
+	"grman/grman.h"
+	<iostream>
+	<stack>
+
+1523030605 c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\calcul.h
+	"Sommet.h"
+	<vector>
+	<queue>
+	"Graphe.h"
+
+1523032561 c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\menu.h
+	"grman/grman.h"
+	<iostream>
+	<string>
+
+1523133705 source:c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\menu.cpp
+	"Menu.h"
+	<iostream>
+	"Graphe.h"
+
+1523205453 source:c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\simulateur.cpp
+	"Simulateur.h"
+	"Sommet.h"
+
+1523222988 source:c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\sommet.cpp
+	"Sommet.h"
+	"Arc.h"
+	"Graphe.h"
+
+1522862444 source:c:\users\leo gerardin\desktop\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\test.cpp
+	"test.h"
+
+1523223762 source:c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\arc.cpp
+	"Arc.h"
+	"Sommet.h"
+	"Graphe.h"
+
+1523223762 c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\arc.h
+	"grman/grman.h"
+	"Sommet.h"
+	<iostream>
+
+1523223769 c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\grman\grman.h
+	<allegro.h>
+	<string>
+	"grman_couleurs.h"
+	"coords.h"
+	"widget.h"
+
+1523223769 c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\grman\grman_couleurs.h
+
+1523223769 c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\grman\coords.h
+	<cmath>
+
+1523223770 c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\grman\widget.h
+	"grman.h"
+	<iostream>
+	<string>
+	<vector>
+	<algorithm>
+	<allegro.h>
+
+1523223762 c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\sommet.h
+	"grman/grman.h"
+	<string>
+	<vector>
+	<iostream>
+
+1523223762 c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\graphe.h
+	"grman/grman.h"
+	"Sommet.h"
+
+1523223762 source:c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\calcul.cpp
+	"Graphe.h"
+	<queue>
+
+1523223762 source:c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\graphe.cpp
+	"Graphe.h"
+	"Sommet.h"
+	"Simulateur.h"
+	"Arc.h"
+	<iostream>
+	<fstream>
+	<vector>
+
+1523223762 c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\simulateur.h
+	"grman/grman.h"
+	<vector>
+
+1523223769 source:c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\grman\coords.cpp
+	"coords.h"
+
+1523223769 source:c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\grman\grman.cpp
+	<cmath>
+	<unordered_map>
+	<unordered_set>
+	<utility>
+	<string>
+	<iostream>
+	<regex>
+	"grman.h"
+	<allegro.h>
+	<png.h>
+	<loadpng.h>
+	<jpgalleg.h>
+
+1523223770 source:c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\grman\widget.cpp
+	"widget.h"
+
+1523223762 source:c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\main.cpp
+	"grman/grman.h"
+	<iostream>
+	"test.h"
+	<iostream>
+	"Graphe.h"
+	"Calcul.h"
+	"Sommet.h"
+	"Arc.h"
+	"Menu.h"
+
+1523223762 c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\test.h
+	"grman/grman.h"
+	<iostream>
+	<stack>
+
+1523223762 c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\calcul.h
+	"Sommet.h"
+	<vector>
+	<queue>
+	"Graphe.h"
+
+1523223762 c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\menu.h
+	"grman/grman.h"
+	<iostream>
+	<string>
+
+1523223762 source:c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\menu.cpp
+	"Menu.h"
+	<iostream>
+	"Graphe.h"
+
+1523223762 source:c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\simulateur.cpp
+	"Simulateur.h"
+	"Sommet.h"
+
+1523223762 source:c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\sommet.cpp
+	"Sommet.h"
+	"Arc.h"
+	"Graphe.h"
+
+1523223762 source:c:\users\leo gerardin\documents\ancellin_eloi_hervy_alexandre_gerardin_leo\ancellin_eloi_hervy_alexandre_gerardin_leo\projet-piscine-tg-ing2\test.cpp
+	"test.h"
 
