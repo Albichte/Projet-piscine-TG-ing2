@@ -14,8 +14,6 @@ int main()
 {
     Graphe* a;
     a=new Graphe ("prem.txt");
-    delete a;
-    /*
     /// A appeler en 1er avant d'instancier des objets graphiques etc...
     grman::init();
 
@@ -36,7 +34,7 @@ int main()
     grman::fermer_allegro();
 
     a->sauvegarde("deux.txt");
-    */
+
     return 0;
 }
 END_OF_MAIN();

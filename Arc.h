@@ -17,7 +17,7 @@ private:
   bool m_actif;
   bool m_marque;
   //widgets pour allegro
-  //grman::Widget
+ // grman::WidgetEdge m_arc;//trait arc
 
 
 public :
